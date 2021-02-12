@@ -10,7 +10,6 @@ A CLI that allows us to generate flags for jest form a json file. This can be us
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 
@@ -48,7 +47,7 @@ $ npm install -g entro-jest-flags
 $ entro-jest-flags COMMAND
 running command...
 $ entro-jest-flags (-v|--version|version)
-entro-jest-flags/0.0.0 linux-x64 node-v14.15.0
+entro-jest-flags/1.1.1 linux-x64 node-v14.15.0
 $ entro-jest-flags --help [COMMAND]
 USAGE
   $ entro-jest-flags COMMAND
