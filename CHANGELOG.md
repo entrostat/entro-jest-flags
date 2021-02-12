@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/Kerren-Entrostat/entro-jest-flags/compare/v1.1.0...v1.1.1) (2021-02-12)
+
+
+### Bug Fixes
+
+* **deps:** Removed fs-extra from the package lock ([4254226](https://github.com/Kerren-Entrostat/entro-jest-flags/commit/425422671c2a0d7cbbcc32d942dc5302bfa7e433))
+
 ## [1.1.0](https://github.com/Kerren-Entrostat/entro-jest-flags/compare/v1.0.0...v1.1.0) (2021-02-12)
 
 
