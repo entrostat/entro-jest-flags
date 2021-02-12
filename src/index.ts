@@ -1,6 +1,6 @@
 import { Command } from '@oclif/command';
 import * as path from 'path';
-import * as fs from 'fs-extra';
+import { promises as fs } from 'fs';
 
 class EntroJestFlags extends Command {
     static description = 'Converts the flags set in a JSON file to jest flags';
@@ -20,7 +20,10 @@ class EntroJestFlags extends Command {
         const configPath = path.resolve(args.config);
         try {
             const flags: string[] = [];
-            const config = await fs.readJson(configPath);
+            const config: any = await fs
+                .readFile(configPath)
+                .then(d => d.toString())
+                .then(d => JSON.parse(d));
             if (config.namePattern) {
                 flags.push(`--testNamePattern="${config.namePattern}"`);
             }
