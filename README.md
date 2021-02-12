@@ -1,7 +1,7 @@
 entro-jest-flags
 ================
 
-A CLI that allows us to generate flags for jest form a json file. This can be used to change flags in conjunction with nodemon.
+A CLI that allows us to generate flags for jest form a json file. This can be used to change flags in conjunction with `nodemon`.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/entro-jest-flags.svg)](https://npmjs.org/package/entro-jest-flags)
@@ -13,6 +13,35 @@ A CLI that allows us to generate flags for jest form a json file. This can be us
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
+
+If you create a `.json` file with the following entries,
+
+`config.json`:
+```json
+{
+    "namePattern": "name pattern",
+    "pathPattern": "path pattern"
+}
+```
+
+And then you run, `entro-jest-flags config.json`, the output will be:
+
+```
+--testNamePattern="name pattern" --testPathPattern="path pattern"
+```
+
+So using `nodemon`, we can rerun `jest` tests using:
+
+```
+nodemon --watch=./config.json --exec npm run test
+```
+
+And then set the `test` script in your `package.json` to:
+
+```
+jest $(entro-jest-flags ./config.json) --watchAll --verbose
+```
+
 <!-- usage -->
 ```sh-session
 $ npm install -g entro-jest-flags
