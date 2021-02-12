@@ -29,10 +29,10 @@ class EntroJestFlags extends Command {
                 .readFile(configPath)
                 .then(d => d.toString())
                 .then(d => JSON.parse(d));
-            if (config.namePattern) {
+            if (config.namePattern && config.namePattern !== '') {
                 flags.push(`--testNamePattern="${config.namePattern}"`);
             }
-            if (config.pathPattern) {
+            if (config.pathPattern && config.pathPattern !== '') {
                 flags.push(`--testPathPattern="${config.pathPattern}"`);
             }
             console.log(flags.join(' '));
