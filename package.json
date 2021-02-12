@@ -1,7 +1,7 @@
 {
   "name": "entro-jest-flags",
   "description": "A CLI that allows us to generate flags for jest form a json file. This can be used to change flags in conjunction with nodemon.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Kerren @Kerren-Entrostat",
   "bin": {
     "entro-jest-flags": "./bin/run"
