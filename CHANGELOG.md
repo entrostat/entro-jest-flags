@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Kerren-Entrostat/entro-jest-flags/compare/v1.1.1...v1.2.0) (2021-02-12)
+
+
+### Features
+
+* **flags:** Ignore empty strings ([a76ad58](https://github.com/Kerren-Entrostat/entro-jest-flags/commit/a76ad58fd2fbca541aec4564b716135d9f25be27))
+
 ### [1.1.1](https://github.com/Kerren-Entrostat/entro-jest-flags/compare/v1.1.0...v1.1.1) (2021-02-12)
 
 
