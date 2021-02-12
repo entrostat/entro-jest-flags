@@ -38,7 +38,7 @@ nodemon --watch=./config.json --exec npm run test
 And then set the `test` script in your `package.json` to:
 
 ```
-jest $(entro-jest-flags ./config.json) --watchAll --verbose
+jest $(npx entro-jest-flags ./config.json) --watchAll --verbose
 ```
 
 <!-- usage -->
@@ -47,7 +47,7 @@ $ npm install -g entro-jest-flags
 $ entro-jest-flags COMMAND
 running command...
 $ entro-jest-flags (-v|--version|version)
-entro-jest-flags/1.1.1 linux-x64 node-v14.15.0
+entro-jest-flags/1.2.0 linux-x64 node-v14.15.0
 $ entro-jest-flags --help [COMMAND]
 USAGE
   $ entro-jest-flags COMMAND
